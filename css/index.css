@@ -47,8 +47,7 @@
 }
 
 .header-wrapper .block-text-wrapper{
-    width: 1248px;
-    height: 100%;
+    width: 100%;
     margin-top: 120px;
     display: flex;
     justify-content: space-around;
@@ -62,8 +61,6 @@
     font-size: 80px;
     line-height: 110%;
     color: #212353;
-    width: 645px;
-    height: 184px;
     margin-bottom: 40px;
 }
 
@@ -97,8 +94,9 @@
 }
 
 .header-wrapper .block-text-wrapper .save-img{
-    margin-left: -292px;
+    margin-left: -298px;
     margin-top: 106px;
+    width: 68%;
 }
 
 .nav-wrapper{
@@ -139,7 +137,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 180px;
+    padding-bottom: 180px;
 }
 
 .features-wrapper .title-block{
@@ -163,7 +161,6 @@
     font-size: 18px;
     line-height: 160%;
     color: #4B5D68;
-    width: 584px;
     text-align: center;
 }
 
@@ -254,16 +251,14 @@
 .test-wrapper{
     background: #9C69E2;
     border-radius: 50px;
-    width: 1118px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     margin: auto;
 }
 
 .test-wrapper .header-text{
-    padding-top:  109px;
-    padding-left: 93px;
-    padding-bottom: 80px;
+    padding: 110px 0 92px 96px;
     font-style: normal;
     font-weight: bold;
     font-size: 40px;
@@ -272,16 +267,19 @@
     display: block;
 }
 
+.test-wrapper .block-wrapper{
+    padding: 0 95px;
+}
+
 .test-wrapper .block-wrapper .test-main-block{
-    width: 949px;
-    height: 330px;
+    width: 100%;
     background: #FFFFFF;
     box-shadow: 0px 20px 0px rgba(156, 105, 226, 0.3);
     border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: auto;
+    padding: 80px 0;
 }
 
 .test-wrapper .block-wrapper .test-main-block .img-wrapper{
@@ -342,7 +340,6 @@
     flex-direction: column;
     width: 100%;
     padding-top:  109px;
-    padding-left: 93px;
 }
 
 .footer-wrapper .info-header-block{
@@ -350,7 +347,6 @@
     flex-direction: row;
     width: 100%;   
     padding-bottom: 140px;
-}
 }
 
 .footer-wrapper .info-header-block .text-block{
@@ -360,7 +356,6 @@
 }
 
 .footer-wrapper .info-header-block .text-block .header{
-    width: 405px;
     font-style: normal;
     font-weight: bold;
     font-size: 40px;
@@ -370,8 +365,6 @@
 }
 
 .footer-wrapper .info-header-block .text-block .text{
-    width: 584px;
-    height: max-content;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -382,6 +375,7 @@
 .footer-wrapper .info-header-block .btn-block{
     width: 50%;
     display: flex;
+    justify-content: flex-end;
     align-items: center;
 }
 
@@ -413,8 +407,8 @@
     font-size: 20px;
     line-height: 160%;
     color: #212353;
-    margin-left: 10px;
-    vertical-align: bottom;
+    display: flex;
+    align-items: center;
 }
 
 .footer-wrapper .info-block .data-text1-item{
@@ -425,11 +419,9 @@
     line-height: 180%;
     letter-spacing: 0.01em;
     color: #212353;
-    width: 335px;
 }
 
 .footer-wrapper .info-block .data-text2-item{
-    width: 335px;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -456,14 +448,28 @@
     color: #212353;
 }
 
+.footer-wrapper .info-block .data .data-header-item::before{
+    content: url("../img/block-5/Logo.png");
+    margin-right: 20px;
+}
+
+.footer-wrapper .info-block .data{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    padding-right: 200px;
+}
+
 .footer-wrapper .info-block .about{
     width: 25%;
     display: flex;
+    flex-direction: column;
 }
 
 .footer-wrapper .info-block .help{
     width: 25%;
     display: flex;
+    flex-direction: column;
 }
 
 .footer-wrapper .info-block .media{
@@ -515,16 +521,16 @@
     line-height: 180%;
     letter-spacing: 0.01em;
     color: #212353;
-    width: 50%;
+    width: 25%;
     display: flex;
 }
 
 .footer-wrapper .footer-img .icon-wrapper{
-    width: 50%;
+    width: 75%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    padding-right: 80px;
+    padding-right: 70px;
 }
 
 
