@@ -4,10 +4,14 @@
     font-family: 'Lato', sans-serif;
 }
 
+a{
+    text-decoration: none;
+}
+
 .page{
     max-width: 1248px;
     padding: 0 100px;
-    background-color: #E5E5E5;
+    background: linear-gradient(180deg, #F6FAFD 0%, #FFFFFF 19.4%);
 }
 
 .header-wrapper{
@@ -28,22 +32,16 @@
     align-items: center;
 }
 
-
-.header-wrapper .header .menu-items .about-item{
-    font-weight: 800;
-    font-size: 16px;
-    line-height: 160%;
-    text-decoration: none;
-    color: #212353;
-    margin-right: 35px;
-}
-
 .header-wrapper .header .menu-items .menu-item{
     font-weight: 500;
     font-size: 16px;
     line-height: 160%;
     color: #212353;
     margin-right: 35px;
+}
+
+.header-wrapper .header .menu-items .menu-item:first-child{
+    font-weight: 800;
 }
 
 .header-wrapper .block-text-wrapper{
@@ -71,8 +69,7 @@
     line-height: 160%;
     color: #4B5D68;
     margin-bottom: 50px;
-    width: 380px;
-    height: 120px;
+    width: 42%;
 }
 
 .header-wrapper .block-text-wrapper .learn-more-button{
@@ -82,6 +79,10 @@
     background-color: #9C69E2;
     border: none;
     outline: none;
+}
+
+.header-wrapper .block-text-wrapper .learn-more-button:hover{
+    border: 1px solid #4B5D68;
 }
 
 .header-wrapper .block-text-wrapper .learn-more-button .text-btn{
@@ -201,6 +202,12 @@
     color: #212353;
 }
 
+.features-wrapper .features-main-block .href-text::after{
+    content: url('../img/Group56.png');
+    vertical-align: middle;
+    margin-left: 20px;
+}
+
 .features-row{
     display: flex;
 }
@@ -215,6 +222,12 @@
     flex-direction: column;
     width: 50%;
 }
+
+/* .features-text::after{
+    content: url('../img/Group56.png');
+    vertical-align: middle;
+    margin-left: 20px;
+} */
 
 .features-wrapper .features-main-block .search-block{
     width: 50%;
@@ -384,7 +397,12 @@
     height: 60px;
     background-color: #F063B8;
     border: none;
+    outline: none;
     border-radius: 50px;
+}
+
+.footer-wrapper .info-header-block .btn-block .btn-1:hover{
+    border: 1px solid #4B5D68;
 }
 
 .footer-wrapper .info-header-block .btn-block .btn-1 .learn-more{
@@ -500,11 +518,13 @@
 }
 
 .request-btn::after{
-    width: 20px;
-    height: 14px;
     content: url('../img/Group56.png');
     vertical-align: middle;
     margin-left: 20px;
+}
+
+.request-btn:hover{
+    border: 1px solid grey;
 }
 
 .footer-wrapper .footer-img{
